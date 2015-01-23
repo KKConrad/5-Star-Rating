@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+}
+
+header {
+    font-size: 24px;
+    color: blue;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: auto;
+    margin-top: 10%;
+    width: 80px;
+}
+
+footer {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: blue;
+    width: 100px;
+    margin: auto;
+    margin-top: 20%;
+}
+
+#rateBar {
+    width: 647px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#rateBar .starRating span.selected  {
+    width: 120px;
+    height: 120px;
+    background-color: pink;
+    border: solid white;
+    display: inline-block;
+}
+
+#rateBar .starRating span  {
+    width: 120px;
+    height: 120px;
+    background-color: lightblue;
+    border: solid blue;
+    display: inline-block;
+}
+
+#rateBar .starRating span.saved {
+    width: 120px;
+    height: 120px;
+    background-color: deeppink;
+    border: solid magenta;
+    display: inline-block;
+}

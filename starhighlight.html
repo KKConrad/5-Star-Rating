@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-2.1.1.js'></script>
+    <link rel="stylesheet" type="text/css" href="starhighlight.css">
+    <script type='text/javascript' src="javascript/starhighlight.js"></script>
+</head>
+<body>
+    <header>Rate it!</header>
+    <div id ="rateBar">
+        <div class="starRating">
+            <span id="star-1">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Blue_Star.svg/120px-Blue_Star.svg.png" />
+            </span>
+            <span id="star-2">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Blue_Star.svg/120px-Blue_Star.svg.png" />
+            </span>
+            <span id="star-3">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Blue_Star.svg/120px-Blue_Star.svg.png" />
+            </span>
+            <span id="star-4">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Blue_Star.svg/120px-Blue_Star.svg.png" />
+            </span>
+            <span id="star-5">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Blue_Star.svg/120px-Blue_Star.svg.png" />
+            </span>
+        </div>
+    </div>
+
+    <footer>Krizia Conrad</footer>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+        for(var i = 1; i <=5 ; i++) {
+            var selector = $('#star-' + i);
+            highlightStars(selector);
+            unhighlightStars(selector);
+            clickStars(selector);
+        }
+    });
+</script>
+</body>
+</html>
+
